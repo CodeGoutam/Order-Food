@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="25dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/orderImg"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/burgur" />
+
+    <TextView
+        android:id="@+id/orderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Food Name"
+        android:textColor="#E4B416"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#E1EFEF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/minus"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/minus_circular"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="2"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="29sp" />
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plus_circular"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="29sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="Description"
+        android:textColor="#525151"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/customerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_edittext"
+        android:hint="Your Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#6F6C6C"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/customerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_edittext"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#6F6C6C"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="Price"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Rs."
+            android:textColor="#EE1212"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/orderCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="100"
+            android:textColor="#DD0F0F"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ring"
+        android:text="ORDER NOW"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
+
+
